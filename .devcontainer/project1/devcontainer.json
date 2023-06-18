@@ -1,8 +1,8 @@
 {
-	"name": "Data 8 Notebook",
+	"name": "Data 8: Project 1 Notebook",
 	"build": {
-		"dockerfile": "dockerfile",
-		"context": ".."
+		"dockerfile": "../dockerfile",
+		"context": "../.."
 	},
 	"customizations": {
 		"codespaces": {
