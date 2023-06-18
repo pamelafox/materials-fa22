@@ -4,6 +4,7 @@
 		"dockerfile": "../dockerfile",
 		"context": "../.."
 	},
+	"waitFor": "onCreateCommand",
 	"customizations": {
 		"codespaces": {
 			"openFiles": [
@@ -12,7 +13,11 @@
 		},
 		"vscode": {
 			"settings": {
-				"python.defaultInterpreterPath": "/usr/local/bin/python"
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+				"workbench.editorAssociations": {
+					"*.ipynb": "jupyter-notebook"
+				},
+				"notebook.compactView": false
 			},
 			"extensions": [
 				"ms-python.python",
