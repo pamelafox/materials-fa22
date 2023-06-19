@@ -23,5 +23,5 @@
             ]
         }
     },
-    "postAttachCommand": "code ${localWorkspaceFolder}/materials/fa22/project/project1/project1.ipynb"
+    "postAttachCommand": "code /workspaces/materials-fa22/materials/fa22/project/project1/project1.ipynb"
 }
