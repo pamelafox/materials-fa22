@@ -1,8 +1,8 @@
 {
     "name": "Data 8: lab03",
     "build": {
-        "dockerfile": "dockerfile",
-        "context": ".."
+        "dockerfile": "../dockerfile",
+        "context": "../.."
     },
     "customizations": {
         "codespaces": {

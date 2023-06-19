@@ -20,8 +20,8 @@ with open('.devcontainer/devcontainer.json', 'r') as f:
         new_dc['name'] = f"Data 8: {assignment}"
         new_dc['postAttachCommand'] = "code ${localWorkspaceFolder}/" + path
         new_dc["build"] = {
-		    "dockerfile": "dockerfile",
-		    "context": ".."
+		    "dockerfile": "../dockerfile",
+		    "context": "../.."
 	    }
         # Write new devcontainer.json into filename-based directory
         dir = os.path.join('.devcontainer', assignment)

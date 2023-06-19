@@ -1,8 +1,8 @@
 {
     "name": "Data 8: project2",
     "build": {
-        "dockerfile": "dockerfile",
-        "context": ".."
+        "dockerfile": "../dockerfile",
+        "context": "../.."
     },
     "customizations": {
         "codespaces": {
