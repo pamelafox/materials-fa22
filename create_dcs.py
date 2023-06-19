@@ -18,7 +18,7 @@ with open('.devcontainer/devcontainer.json', 'r') as f:
         # Customize the devcontainer.json dict with filename-based customizations
         new_dc = dc.copy()
         new_dc['name'] = f"Data 8: {assignment}"
-        new_dc['postAttachCommand'] = "code ${localWorkspaceFolder}/" + path
+        new_dc['postAttachCommand'] = f"code /workspaces/materials-fa22/{path}"
         new_dc["build"] = {
 		    "dockerfile": "../dockerfile",
 		    "context": "../.."
