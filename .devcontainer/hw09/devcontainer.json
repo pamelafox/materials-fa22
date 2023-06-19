@@ -1,10 +1,9 @@
 {
     "name": "Data 8: hw09",
     "build": {
-        "dockerfile": "../dockerfile",
-        "context": "../.."
+        "dockerfile": "dockerfile",
+        "context": ".."
     },
-    "waitFor": "onCreateCommand",
     "customizations": {
         "codespaces": {
             "openFiles": []
