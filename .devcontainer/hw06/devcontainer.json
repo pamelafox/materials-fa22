@@ -23,5 +23,5 @@
             ]
         }
     },
-    "postAttachCommand": "code /workspaces/materials-fa22/materials/fa22/hw/hw06/hw06.ipynb"
+    "postAttachCommand": "code ${localWorkspaceFolder}/materials/fa22/hw/hw06/hw06.ipynb"
 }

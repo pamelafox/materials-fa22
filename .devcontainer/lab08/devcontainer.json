@@ -23,5 +23,5 @@
             ]
         }
     },
-    "postAttachCommand": "code /workspaces/materials-fa22/materials/fa22/lab/lab08/lab08.ipynb"
+    "postAttachCommand": "code ${localWorkspaceFolder}/materials/fa22/lab/lab08/lab08.ipynb"
 }
