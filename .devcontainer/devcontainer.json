@@ -1,13 +1,21 @@
 {
-	"name": "Data 8 Notebook",
+	"name": "Data 8: Project 1 Notebook",
 	"build": {
-		"dockerfile": "dockerfile",
-		"context": ".."
+		"dockerfile": "../dockerfile",
+		"context": "../.."
 	},
+	"waitFor": "onCreateCommand",
 	"customizations": {
+		"codespaces": {
+			"openFiles": []
+		},
 		"vscode": {
 			"settings": {
-				"python.defaultInterpreterPath": "/usr/local/bin/python"
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+				"workbench.editorAssociations": {
+					"*.ipynb": "jupyter-notebook"
+				},
+				"notebook.compactView": false
 			},
 			"extensions": [
 				"ms-python.python",
