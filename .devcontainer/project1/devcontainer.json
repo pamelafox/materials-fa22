@@ -5,11 +5,6 @@
 		"context": "../.."
 	},
 	"customizations": {
-		"codespaces": {
-			"openFiles": [
-			  "materials/fa22/project/project1/project1.ipynb"
-			]
-		},
 		"vscode": {
 			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python"
@@ -20,5 +15,6 @@
 				"MS-vsliveshare.vsliveshare"
 			]
 		}
-	}
+	},
+	"postAttachCommand": "code /workspaces/materials-fa22/materials/fa22/project/project1/project1.ipynb"
 }
