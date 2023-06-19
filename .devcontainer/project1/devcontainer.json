@@ -6,6 +6,9 @@
 	},
 	"waitFor": "onCreateCommand",
 	"customizations": {
+		"codespaces": {
+			"openFiles": []
+		},
 		"vscode": {
 			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
