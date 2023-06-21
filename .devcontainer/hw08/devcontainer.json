@@ -4,6 +4,11 @@
         "dockerfile": "../dockerfile",
         "context": "../.."
     },
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.11"
+        }
+    },
     "customizations": {
         "codespaces": {
             "openFiles": []
@@ -23,5 +28,6 @@
             ]
         }
     },
+    "postCreateCommand": "python3 -m pip install -r .devcontainer/requirements.txt",
     "postAttachCommand": "code /workspaces/materials-fa22/materials/fa22/hw/hw08/hw08.ipynb"
 }

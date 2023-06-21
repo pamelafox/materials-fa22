@@ -1,11 +1,11 @@
-FROM python:3.11.2-slim
+FROM debian:bullseye-slim
 
 # Install Git
-RUN apt-get update && apt-get install -q -y --fix-missing \
-	git && \
-	rm -rf /var/lib/apt/lists/*
+#RUN apt-get update && apt-get install -q -y --fix-missing \
+#	git && \
+#	rm -rf /var/lib/apt/lists/*
 
 #[Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
-COPY .devcontainer/requirements.txt /tmp/pip-tmp/
-RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
-   && rm -rf /tmp/pip-tmp
+#COPY .devcontainer/requirements.txt /tmp/pip-tmp/
+#RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
+#   && rm -rf /tmp/pip-tmp

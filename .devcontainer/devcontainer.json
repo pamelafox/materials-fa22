@@ -4,6 +4,11 @@
 		"dockerfile": "dockerfile",
 		"context": ".."
 	},
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.11"
+		}
+	},
 	"customizations": {
 		"codespaces": {
 			"openFiles": []
@@ -22,5 +27,6 @@
 				"MS-vsliveshare.vsliveshare"
 			]
 		}
-	}
+	},
+	"postCreateCommand": "python3 -m pip install -r .devcontainer/requirements.txt"
 }
