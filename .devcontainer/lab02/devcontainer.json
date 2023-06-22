@@ -4,23 +4,13 @@
         "dockerfile": "../dockerfile",
         "context": "../.."
     },
-    "features": {
-        "ghcr.io/devcontainers/features/python:1": {
-            "version": "3.11",
-            "installJupyterlab": true
-        }
-    },
     "customizations": {
         "codespaces": {
             "openFiles": []
         },
         "vscode": {
             "settings": {
-                "python.defaultInterpreterPath": "/usr/local/bin/python",
-                "workbench.editorAssociations": {
-                    "*.ipynb": "jupyter-notebook"
-                },
-                "notebook.compactView": false
+                "python.defaultInterpreterPath": "/usr/local/bin/python"
             },
             "extensions": [
                 "ms-python.python",
@@ -29,6 +19,5 @@
             ]
         }
     },
-    "postCreateCommand": "python3 -m pip install -r .devcontainer/requirements.txt",
     "postAttachCommand": "code /workspaces/materials-fa22/materials/fa22/lab/lab02/lab02.ipynb"
 }

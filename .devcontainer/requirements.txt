@@ -12,3 +12,6 @@ bqplot
 nbinteract==0.0.12
 otter-grader==3.3.0
 okpy
+ipykernel
+jupyterlab
+jupyterlab-git
