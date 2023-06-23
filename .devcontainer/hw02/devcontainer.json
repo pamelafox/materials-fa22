@@ -1,9 +1,6 @@
 {
     "name": "Data 8: hw02",
-    "build": {
-        "dockerfile": "../dockerfile",
-        "context": "../.."
-    },
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
     "customizations": {
         "codespaces": {
             "openFiles": []
@@ -19,5 +16,10 @@
             ]
         }
     },
-    "postAttachCommand": "code /workspaces/materials-fa22/materials/fa22/hw/hw02/hw02.ipynb"
+    "updateContentCommand": "python3 -m pip install -r .devcontainer/requirements.txt",
+    "postAttachCommand": "code /workspaces/materials-fa22/materials/fa22/hw/hw02/hw02.ipynb",
+    "build": {
+        "dockerfile": "../dockerfile",
+        "context": "../.."
+    }
 }

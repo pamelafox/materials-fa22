@@ -1,9 +1,6 @@
 {
 	"name": "Data 8 notebooks",
-	"build": {
-		"dockerfile": "dockerfile",
-		"context": ".."
-	},
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"customizations": {
 		"codespaces": {
 			"openFiles": []
@@ -18,5 +15,6 @@
 				"MS-vsliveshare.vsliveshare"
 			]
 		}
-	}
+	},
+	"updateContentCommand": "python3 -m pip install -r .devcontainer/requirements.txt"
 }
